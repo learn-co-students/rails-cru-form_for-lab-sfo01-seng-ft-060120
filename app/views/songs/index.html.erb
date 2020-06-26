@@ -1,0 +1,5 @@
+<%#name_arr = []%>
+<p><%@songs.each do |n|%></p>
+<p><%= link_to n.name, song_path(n)%></p>
+<%end%>
+<%#= name_arr %>
