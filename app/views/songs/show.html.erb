@@ -1,0 +1,6 @@
+<h1>Song Show Page!</h1>
+<h3><%= @song.name %></h3>
+<h5>Artist: <%= Artist.find(@song.artist_id).name %></h5>
+<h5>Genre: <%= Genre.find(@song.genre_id).name %></h5>
+
+<%= link_to "Edit This Song", edit_song_path(@song) %>

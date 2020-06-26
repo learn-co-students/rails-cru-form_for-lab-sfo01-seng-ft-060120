@@ -1,0 +1,8 @@
+<h1>Genre New Page!</h1>
+
+<h3>Create New Genre</h3>
+<%= form_tag(genres_path) do %>
+    <%= label_tag('genre[name]', 'Name: ') %>
+    <%= text_field_tag 'genre[name]'%>
+    <%= submit_tag 'Create Genre'%>
+<% end %>
